@@ -15,4 +15,11 @@ jobs:
             import platform
             print(platform.processor())
           shell: python
-            
+    run-windows-command:
+       runs-on: windows-latest
+       steps:
+         - name: Directoy powershell
+           run: Get-Location
+         - name: Directoy Bash
+           run: pwd
+           shell: bash
